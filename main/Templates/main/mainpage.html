@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="page-container">
+        <img src="{% static 'images/lion.jpg' %}" alt="사자" width="100px">
+        <p class="tag">LikeLion_14th_session</p>
+        <h1 class="title">멋사 {{generation}}기 2주차 세션 정리</h1>
+        <h6 class="welcome">어렵지만 재밌다!!</h6>
+
+        <div class="section">
+            <div class="section-title">🦁 Django 페이지 만들기 🦁</div>
+            <ul>
+                <li>Django 페이지 만들기</li>
+                <li>main/templates/main 폴더 {{info.making}} 후</li>
+                <li>mainpage.html 파일 {{info.making}}</li>
+                <li>view.py {{info.writing}} mainpage를 렌더링</li>
+                <li>urls.py {{info.writing}} main의 view를 끌어다 씀</li>
+                <li>터미널에 python manage.py runserver → {{info.execution}}</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🦁 변수 사용 🦁</div>
+            <ul>
+                <li>view에 변수 정의</li>
+                <li>view에서 보내준 데이터를 html에서 중괄호 두 개로 사용 가능</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🦁 template 상속 🦁</div>
+            <ul>
+                <li>mainpage와 secondpage에서 중복되는 부분을 묶어서 다른 파일에 저장하기</li>
+                <li>Block {{info.tag}} → 중괄호와 퍼센트로 감싸기</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🦁 template 상속 🦁</div>
+            <ul>
+                <li>mainpage와 secondpage에서 중복되는 부분을 묶어서 다른 파일에 저장하기</li>
+                <li>Block {{info.tag}} → 중괄호와 퍼센트로 감싸기</li>
+                <li>가장 위에 어디에서 상속 받을 지 입력</li>
+                <li>page 파일에는 다른 내용에 {{info.tag}}</li>
+                <li>base 파일에는 겹치는 내용에 {{info.tag}}</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🦁 navbar 🦁</div>
+            <ul>
+                <li>base의 nav부분을 _navbar 파일에 옮기기</li>
+                <li>base에서 잘라낸 부분에는 include {{info.tag}}z</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🦁 정적 파일 폴더 {{info.making}} 🦁</div>
+            <ul>
+                <li>css, image 등 변경하기</li>
+            </ul>
+        </div>
+
+    </div>
+{% endblock %}
